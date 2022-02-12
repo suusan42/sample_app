@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1.0">
-        <title>Sample App</title>
-    </head>
-    <body>
-        <h1>Hello World!!</h1>
-        <p>This is sample application!</p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Sample App</title>
+</head>
+<body>
+    <h1>Hello World!!</h1>
+    <p id="msg">This is sample application!</p>
+    <div>
+        <button onclick="doAction();">CLICK</button> 
+    </div>
+</body>
+<script>
+var counter = 0;
+function doAction(){
+ //   alert('テスト1');
+    let p= document.querySelector("#msg");
+ //   alert('テスト2');
+    p.textContent = "count: " + ++counter;
+ //   alert('テスト3');
+
+}
+</script>
 </html>
